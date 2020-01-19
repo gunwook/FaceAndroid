@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:id="@+id/backIv"
+                   android:padding="5dp"
+                   android:src="@drawable/back"/>
+
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/login"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toTopOf="@+id/backIv"
+                  app:layout_constraintBottom_toBottomOf="@+id/backIv"
+                  android:textSize="17sp"
+                  android:textColor="@color/color_3f3f3f"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="100dp"
+                   android:layout_height="80dp"
+                   android:id="@+id/logoIv"
+                   android:src="@drawable/logo"
+                   app:layout_constraintTop_toBottomOf="@+id/backIv"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   android:layout_marginTop="80dp"
+        />
+
+        <androidx.appcompat.widget.AppCompatEditText android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:minHeight="45dp"
+                  android:id="@+id/emailEt"
+                  android:textColor="@color/color_3f3f3f"
+                  android:textSize="17sp"
+                  app:layout_constraintTop_toBottomOf="@+id/logoIv"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  android:layout_marginTop="50dp"
+                  android:layout_marginStart="30dp"
+                  android:layout_marginEnd="30dp"
+                  android:hint="@string/email"
+                  android:gravity="center"
+                  android:background="@drawable/corner_10_stroke_efefef_solid_ffffff"
+                />
+
+
+        <androidx.appcompat.widget.AppCompatEditText android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:minHeight="45dp"
+                  android:id="@+id/passwordEt"
+                  android:textColor="@color/color_3f3f3f"
+                  android:textSize="17sp"
+                  app:layout_constraintTop_toBottomOf="@+id/emailEt"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginStart="30dp"
+                  android:layout_marginEnd="30dp"
+                  android:hint="@string/password"
+                 android:inputType="textPassword"
+                 android:gravity="center"
+                  android:background="@drawable/corner_10_stroke_efefef_solid_ffffff"
+        />
+
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:minHeight="45dp"
+                  android:id="@+id/loginTv"
+                  android:textColor="@color/white"
+                  android:textSize="17sp"
+                  app:layout_constraintTop_toBottomOf="@+id/passwordEt"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginStart="30dp"
+                  android:layout_marginEnd="30dp"
+                  android:text="@string/login"
+                  android:gravity="center"
+                  android:background="@drawable/corner_10_solid_50bcdf"
+        />
+
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     app:layout_constraintTop_toBottomOf="@+id/loginTv"
+                                                     app:layout_constraintRight_toRightOf="@+id/loginTv"
+                                                     android:layout_marginRight="15dp"
+                                                     android:text="@string/password_find"
+                                                     android:id="@+id/passwordFindTv"
+                                                     android:layout_marginTop="15dp"
+                                                     android:textSize="14sp"
+                                                     android:textColor="@color/color_3f3f3f"
+                                                     android:layout_marginEnd="15dp"/>
+
+
+        <View android:layout_width="0dp"
+              android:layout_height="0.7dp"
+              android:background="@color/color_efefef"
+              app:layout_constraintTop_toBottomOf="@+id/passwordFindTv"
+              android:layout_marginStart="30dp"
+              android:layout_marginEnd="30dp"
+              android:id="@+id/passwordView"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              android:layout_marginTop="10dp"
+        />
+
+
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="150dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:minHeight="45dp"
+                                                     android:id="@+id/signUpTv"
+                                                     android:textColor="@color/color_3f3f3f"
+                                                     android:textSize="17sp"
+                                                     app:layout_constraintTop_toBottomOf="@+id/passwordView"
+                                                     app:layout_constraintLeft_toLeftOf="parent"
+                                                     app:layout_constraintRight_toRightOf="parent"
+                                                     android:layout_marginTop="30dp"
+                                                     android:layout_marginStart="30dp"
+                                                     android:layout_marginEnd="30dp"
+                                                     android:gravity="center"
+                                                     android:text="@string/signUp"
+                                                     android:background="@drawable/corner_30_stroke_efefef_solid_ffffff"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

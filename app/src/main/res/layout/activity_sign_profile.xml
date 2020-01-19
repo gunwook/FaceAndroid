@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="40dp"
+                                                      android:layout_height="40dp"
+                                                      app:layout_constraintLeft_toLeftOf="parent"
+                                                      app:layout_constraintTop_toTopOf="parent"
+                                                      android:layout_marginTop="20dp"
+                                                      android:layout_marginStart="10dp"
+                                                      android:layout_marginEnd="10dp"
+                                                      android:id="@+id/backIv"
+                                                      android:padding="5dp"
+                                                      android:src="@drawable/back"/>
+
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/account"
+                                                     app:layout_constraintLeft_toLeftOf="parent"
+                                                     app:layout_constraintRight_toRightOf="parent"
+                                                     app:layout_constraintTop_toTopOf="@+id/backIv"
+                                                     app:layout_constraintBottom_toBottomOf="@+id/backIv"
+                                                     android:textSize="17sp"
+                                                     android:textColor="@color/color_3f3f3f"/>
+
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="80dp" android:layout_height="80dp"
+                                                      android:id="@+id/profileIv"
+                                                      app:layout_constraintLeft_toLeftOf="parent"
+                                                      app:layout_constraintRight_toRightOf="parent"
+                                                      android:layout_marginTop="30dp"
+                                                      android:scaleType="centerCrop"
+                                                      android:text="@string/sign"
+                                                      android:background="@drawable/circle_solid_aaaaaa"
+                                                     android:gravity="center"
+                                                      app:layout_constraintTop_toBottomOf="@+id/backIv"/>
+
+        <androidx.appcompat.widget.AppCompatEditText android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:minHeight="50dp"
+                                                     android:id="@+id/fullNameEt"
+                                                     android:textColor="@color/color_3f3f3f"
+                                                     android:textSize="17sp"
+                                                     app:layout_constraintTop_toBottomOf="@+id/profileIv"
+                                                     app:layout_constraintLeft_toLeftOf="parent"
+                                                     app:layout_constraintRight_toRightOf="parent"
+                                                     android:layout_marginTop="50dp"
+                                                     android:layout_marginStart="30dp"
+                                                     android:layout_marginEnd="30dp"
+                                                     android:hint="@string/fullName"
+                                                     android:maxLines="1"
+                                                     android:gravity="center"
+                                                     android:background="@drawable/corner_10_stroke_efefef_solid_ffffff"
+        />
+
+
+        <androidx.appcompat.widget.AppCompatEditText android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:minHeight="50dp"
+                                                     android:id="@+id/nickNameEt"
+                                                     android:textColor="@color/color_3f3f3f"
+                                                     android:textSize="17sp"
+                                                     android:maxLines="1"
+                                                     app:layout_constraintTop_toBottomOf="@+id/fullNameEt"
+                                                     app:layout_constraintLeft_toLeftOf="parent"
+                                                     app:layout_constraintRight_toRightOf="parent"
+                                                     android:layout_marginTop="30dp"
+                                                     android:layout_marginStart="30dp"
+                                                     android:layout_marginEnd="30dp"
+                                                     android:hint="@string/nickName"
+                                                     android:gravity="center"
+                                                     android:background="@drawable/corner_10_stroke_efefef_solid_ffffff"
+        />
+
+        <androidx.appcompat.widget.AppCompatEditText android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:minHeight="50dp"
+                                                     android:id="@+id/genderEt"
+                                                     android:textColor="@color/color_3f3f3f"
+                                                     android:textSize="17sp"
+                                                     app:layout_constraintTop_toBottomOf="@+id/nickNameEt"
+                                                     app:layout_constraintLeft_toLeftOf="parent"
+                                                     app:layout_constraintRight_toRightOf="parent"
+                                                     android:layout_marginTop="30dp"
+                                                     android:layout_marginStart="30dp"
+                                                     android:maxLines="1"
+                                                     android:layout_marginEnd="30dp"
+                                                     android:hint="@string/gender"
+                                                     android:gravity="center"
+                                                     android:background="@drawable/corner_10_stroke_efefef_solid_ffffff"
+        />
+
+
+        <androidx.appcompat.widget.AppCompatEditText android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:minHeight="50dp"
+                                                     android:id="@+id/aboutEt"
+                                                     android:textColor="@color/color_3f3f3f"
+                                                     android:textSize="17sp"
+                                                     app:layout_constraintTop_toBottomOf="@+id/genderEt"
+                                                     app:layout_constraintLeft_toLeftOf="parent"
+                                                     app:layout_constraintRight_toRightOf="parent"
+                                                     android:layout_marginTop="30dp"
+                                                     android:layout_marginStart="30dp"
+                                                     android:maxLines="1"
+                                                     android:layout_marginEnd="30dp"
+                                                     android:hint="@string/about"
+                                                     android:gravity="center"
+                                                     android:background="@drawable/corner_10_stroke_efefef_solid_ffffff"
+        />
+
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="0dp"
+                                                     android:layout_height="wrap_content"
+                                                     android:minHeight="50dp"
+                                                     android:id="@+id/signUpTv"
+                                                     android:textColor="@color/white"
+                                                     android:textSize="17sp"
+                                                     app:layout_constraintTop_toBottomOf="@+id/aboutEt"
+                                                     app:layout_constraintLeft_toLeftOf="parent"
+                                                     app:layout_constraintRight_toRightOf="parent"
+                                                     android:layout_marginTop="30dp"
+                                                     android:layout_marginStart="30dp"
+                                                     android:layout_marginEnd="30dp"
+                                                     android:text="@string/signUp"
+                                                     android:gravity="center"
+                                                     android:background="@drawable/corner_10_solid_50bcdf"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
